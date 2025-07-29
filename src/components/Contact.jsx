@@ -1,1 +1,109 @@
- 
+import React from "react";
+import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram } from "lucide-react";
+
+const Contact = () => {
+  return (
+    <div className="bg-slate-950 text-white min-h-screen">
+      <h1 className="text-emerald-400 text-3xl font-bold text-center mb-5 py-10">
+        Get in touch
+      </h1>
+
+     
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1">
+ {/* left side start here */}
+      <div className="left">
+        <div className="bg-slate-900/60 border border-emerald-400 rounded-2xl p-5 m-5 ">
+          <h1 className="text-emerald-300 text-2xl mb-3">Send a message</h1>
+          <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-3 justify-center">
+           <input type="hidden" name="access_key" value="5853556a-5994-4cbb-8dd8-66c97b386c32"></input>
+            <input
+              type="text"
+              placeholder="Enter your name "
+              className="focus:border-2 border-white outline rounded-md p-3"
+            />
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter your email here "
+              className="focus:border-2 border-white outline rounded-md p-3"
+            />
+            <input
+              type="text"
+              placeholder="What is subject?"
+              className="focus:border-2 border-white outline rounded-md p-3"
+            />
+            <textarea
+              name=""
+              id=""
+              placeholder="Tell me about your queries"
+              className="focus:border-2 border-white outline rounded-md p-3 w-full h-40"
+            ></textarea>
+            <button type="submit" className="bg-emerald-400 rounded-2xl p-3 ">
+              Send message
+            </button>
+          </form>
+        </div>
+        </div>
+
+        {/* left side end here */}
+
+        {/* right side div start here */}
+        <div className="right">
+          {/* contact info */}
+          <div className="conatct-info flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
+            <h1 className="text-emerald-300 text-2xl">Contact Information</h1>
+            <div className="flex gap-3">
+              <p className="bg-emerald-200 rounded-xl p-3 text-emerald-500">
+                {<Mail />}
+              </p>
+
+              <p className="flex flex-col">
+                <span>Email</span>
+                <span>skc722768@gmail.com</span>
+              </p>
+            </div>
+
+            <div className="flex gap-3">
+              <p className="bg-emerald-200 rounded-xl p-3 text-emerald-500">
+                {<Phone />}
+              </p>
+              <p className="flex flex-col">
+                <span>Phone</span>
+                <span>+91 9219576699</span>
+              </p>
+            </div>
+
+            <div className="flex gap-3">
+              <p className="bg-emerald-200 rounded-xl p-3 text-emerald-500">
+                {<MapPin />}
+              </p>
+              <p className="flex flex-col">
+                <span>Location</span>
+                <span>Kanpur, India</span>
+              </p>
+            </div>
+          </div>
+
+
+    {/* social part */}
+
+            <div className="social flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
+                <h1 className="text-emerald-300 text-2xl">Follow me social</h1>
+                <div className="flex  gap-5">
+                    <span className="p-3 bg-slate-400 rounded-xl border"> <Github/> </span>
+                     <span className="p-3 bg-slate-400 rounded-xl border"> <Linkedin/> </span>
+                      <span className="p-3 bg-slate-400 rounded-xl border" > <Twitter/> </span>
+                       <span className="p-3 bg-slate-400 rounded-xl border"> <Instagram/> </span>
+                </div>
+            </div>
+
+        </div>
+        {/* right side div end here */}
+      
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
