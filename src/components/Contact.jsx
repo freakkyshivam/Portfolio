@@ -18,13 +18,13 @@ const Contact = () => {
            <input type="hidden" name="access_key" value="5853556a-5994-4cbb-8dd8-66c97b386c32"></input>
             <input
               type="text"
+              name="name"
               placeholder="Enter your name "
               className="focus:border-2 border-white outline rounded-md p-3"
             />
             <input
               type="email"
-              name=""
-              id=""
+              name="email"
               placeholder="Enter your email here "
               className="focus:border-2 border-white outline rounded-md p-3"
             />
