@@ -1,35 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './components/Home.jsx' 
-import Header from './components/Header.jsx'
-import About from './components/About.jsx'
-import Skills from './components/Skills.jsx'
-import Project from './components/Project.jsx'
-import { Footer } from './components/Footer.jsx'
-import Contact from './components/Contact.jsx'
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Project from './components/Project';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  
-
   return (
-    <Router className='bg-slate-950'>
-    <Header/>
-       {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/project" element={<Project />} />
-         
-        <Route path="/contact" element={<Contact />} />
-      
-      </Routes> */}
-   <Home/>
-   <About/>
-   <Skills/>
-   <Project/>
-    <Contact/>
-   <Footer/>
-    </Router>
-  )
+    <>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Project />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;

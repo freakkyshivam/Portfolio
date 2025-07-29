@@ -11,7 +11,7 @@ const About = () => {
   ];
 
   return (
-    <section className="flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 sm:p-6 lg:p-8 bg-slate-950 text-white min-h-screen"    >
+    <section className="flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 sm:p-6 lg:p-8 bg-slate-950 text-white min-h-screen"  id='about'  >
       
       <motion className="rounded-3xl shadow-xl p-6 sm:p-8 w-full lg:w-1/2"
          

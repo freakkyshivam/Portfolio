@@ -49,12 +49,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#Skills" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                <a href="#skill" className="text-slate-400 hover:text-emerald-400 transition-colors">
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                <a href="#project" className="text-slate-400 hover:text-emerald-400 transition-colors">
                   Projects
                 </a>
               </li>
@@ -80,3 +80,5 @@ export function Footer() {
     </footer>
   )
 }
+
+export default Footer;

@@ -1,8 +1,9 @@
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import About from "./About";
 
 const Home = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden" id="home">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900" />
       <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/5 via-transparent to-purple-500/5" />
 
@@ -43,7 +44,7 @@ const Home = () => {
         <button
           className="bg-slate-800 border-slate-700 hover:bg-slate-700 hover:border-blue-500 py-4 text-center px-6 flex justify-center text-white rounded-xl"
           onClick={() =>
-            window.open("https://linkedin.com/in/shivamchaudhary", "_blank")
+            window.open("https://www.linkedin.com/in/shivam-chaudhary-289400357?", "_blank")
           }
         >
           <Linkedin className="w-5 h-5 mr-2" />
@@ -52,7 +53,7 @@ const Home = () => {
 
         <button
           className="bg-slate-800 border-slate-700 hover:bg-slate-700 hover:border-purple-500 py-4 px-6 flex text-white rounded-xl"
-          onClick={() => scrollToSection("contact")}
+           
         >
           <Mail className="w-5 h-5 mr-2" />
           Contact

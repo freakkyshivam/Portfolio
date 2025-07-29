@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+ 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,11 +10,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/skills", label: "Skills" },
-    { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" }
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#project", label: "Projects" },
+    { href: "#contact", label: "Contact" }
   ];
 
   return (
@@ -24,9 +25,9 @@ const Header = () => {
       <nav className='hidden md:flex items-center space-x-6 lg:space-x-8 text-white'>
         <ul className='flex space-x-4 lg:space-x-6'>
           {navItems.map((item, index) => (
-            <li key={index}>
-              <a 
-                href={item.href} 
+            <li key={index} className='cursor-pointer'>
+              <a
+                to={item.href} 
                 className='hover:text-emerald-400 transition-colors duration-300 text-sm lg:text-base'
               >
                 {item.label}

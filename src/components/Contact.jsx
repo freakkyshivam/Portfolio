@@ -3,7 +3,7 @@ import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram } from 
 
 const Contact = () => {
   return (
-    <div className="bg-slate-950 text-white min-h-screen">
+    <section className="bg-slate-950 text-white min-h-screen" id="contact">
       <h1 className="text-emerald-400 text-3xl font-bold text-center mb-5 py-10">
         Get in touch
       </h1>
@@ -21,23 +21,27 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name "
               className="focus:border-2 border-white outline rounded-md p-3"
+              required = {true}
             />
             <input
               type="email"
               name="email"
               placeholder="Enter your email here "
               className="focus:border-2 border-white outline rounded-md p-3"
+              required = {true}
             />
             <input
               type="text"
               placeholder="What is subject?"
               className="focus:border-2 border-white outline rounded-md p-3"
+              required = {true}
             />
             <textarea
               name=""
               id=""
               placeholder="Tell me about your queries"
               className="focus:border-2 border-white outline rounded-md p-3 w-full h-40"
+              required = {true}
             ></textarea>
             <button type="submit" className="bg-emerald-400 rounded-2xl p-3 ">
               Send message
@@ -91,10 +95,10 @@ const Contact = () => {
             <div className="social flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
                 <h1 className="text-emerald-300 text-2xl">Follow me social</h1>
                 <div className="flex  gap-5">
-                    <span className="p-3 bg-slate-400 rounded-xl border"> <Github/> </span>
-                     <span className="p-3 bg-slate-400 rounded-xl border"> <Linkedin/> </span>
-                      <span className="p-3 bg-slate-400 rounded-xl border" > <Twitter/> </span>
-                       <span className="p-3 bg-slate-400 rounded-xl border"> <Instagram/> </span>
+                    <a  href="https://github.com/freakkyshivam" className="p-3 rounded-xl border  cursor-pointer text-emerald-500 bg-emerald-200 " > <Github/> </a>
+                     <a href="https://www.linkedin.com/in/shivam-chaudhary-289400357?"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200 " > <Linkedin/> </a>
+                      <a href="https://x.com/freakkyshivam"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200 "  > <Twitter/> </a>
+                       <a href="https://www.instagram.com/freakkyshivam/#"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200 " > <Instagram/> </a>
                 </div>
             </div>
 
@@ -102,7 +106,7 @@ const Contact = () => {
         {/* right side div end here */}
       
       </div>
-    </div>
+    </section>
   );
 };
 
