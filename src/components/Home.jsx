@@ -51,23 +51,27 @@ const Home = () => {
           LinkedIn
         </button>
 
-        <button
+        <a
           className="bg-slate-800 border-slate-700 hover:bg-slate-700 hover:border-purple-500 py-4 px-6 flex text-white rounded-xl"
-           
+        href="#contact"   
         >
           <Mail className="w-5 h-5 mr-2" />
           Contact
-        </button>
+        </a>
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 z-50">
-        <button className="bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-semibold p-3 rounded-xl">
+        <a className="bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-semibold p-3 rounded-xl"
+        href="#project"
+        >
           View My Work
-        </button>
+        </a>
 
-        <button className="bg-transparent border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 p-3 rounded-xl border ">
+        <a className="bg-transparent border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 p-3 rounded-xl border "
+        href="#about"
+        >
           Learn More
-        </button>
+        </a>
       </div>
 
       <div className="animate-bounce">

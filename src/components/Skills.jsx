@@ -13,7 +13,7 @@ const Learning = () => {
   ];
 
   return (
-    <section className="flex flex-col justify-center gap-4 p-5 bg-slate-950 text-white text-center ">
+    <section className="flex flex-col justify-center gap-4 p-5 bg-slate-950 text-white text-center " id='skills'>
       
           <div className="mt-8 flex  flex-col justify-center gap-4 border border-emerald-400 hover:shadow-lg transition-shadow rounded-2xl py-5 ">
               <h3 className="text-3xl font-semibold  text-emerald-400 mb-4">Current Skills</h3>

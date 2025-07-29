@@ -27,7 +27,7 @@ const Header = () => {
           {navItems.map((item, index) => (
             <li key={index} className='cursor-pointer'>
               <a
-                to={item.href} 
+                href={item.href} 
                 className='hover:text-emerald-400 transition-colors duration-300 text-sm lg:text-base'
               >
                 {item.label}

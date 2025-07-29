@@ -44,12 +44,17 @@ export function Footer() {
             <h4 className="text-lg font-semibold text-slate-200 mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
+                <a href="#home" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
                 <a href="#about" className="text-slate-400 hover:text-emerald-400 transition-colors">
                   About
                 </a>
               </li>
               <li>
-                <a href="#skill" className="text-slate-400 hover:text-emerald-400 transition-colors">
+                <a href="#skills" className="text-slate-400 hover:text-emerald-400 transition-colors">
                   Skills
                 </a>
               </li>
