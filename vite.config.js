@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-   base: '/Portfolio-using-React-and-Tailwind/',
+   base: '/Portfolio/',
     resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'), // Enables @/components
