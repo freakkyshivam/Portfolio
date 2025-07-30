@@ -1,5 +1,14 @@
 import React from "react";
-import { Send, Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram } from "lucide-react";
+import {
+  Send,
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Github,
+  Twitter,
+  Instagram,
+} from "lucide-react";
 
 const Contact = () => {
   return (
@@ -8,46 +17,53 @@ const Contact = () => {
         Get in touch
       </h1>
 
-     
       <div className="grid md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1">
- {/* left side start here */}
-      <div className="left">
-        <div className="bg-slate-900/60 border border-emerald-400 rounded-2xl p-5 m-5 ">
-          <h1 className="text-emerald-300 text-2xl mb-3">Send a message</h1>
-          <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-3 justify-center">
-           <input type="hidden" name="access_key" value="5853556a-5994-4cbb-8dd8-66c97b386c32"></input>
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name "
-              className="focus:border-2 border-white outline rounded-md p-3"
-              required = {true}
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email here "
-              className="focus:border-2 border-white outline rounded-md p-3"
-              required = {true}
-            />
-            <input
-              type="text"
-              placeholder="What is subject?"
-              className="focus:border-2 border-white outline rounded-md p-3"
-              required = {true}
-            />
-            <textarea
-              name=""
-              id=""
-              placeholder="Tell me about your queries"
-              className="focus:border-2 border-white outline rounded-md p-3 w-full h-40"
-              required = {true}
-            ></textarea>
-            <button type="submit" className="bg-emerald-400 rounded-2xl p-3 ">
-              Send message
-            </button>
-          </form>
-        </div>
+        {/* left side start here */}
+        <div className="left">
+          <div className="bg-slate-900/60 border border-emerald-400 rounded-2xl p-5 m-5 ">
+            <h1 className="text-emerald-300 text-2xl mb-3">Send a message</h1>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="flex flex-col gap-3 justify-center"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="5853556a-5994-4cbb-8dd8-66c97b386c32"
+              ></input>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name "
+                className="focus:border-2 border-white outline rounded-md p-3"
+                required={true}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email here "
+                className="focus:border-2 border-white outline rounded-md p-3"
+                required={true}
+              />
+              <input
+                type="text"
+                placeholder="What is subject?"
+                className="focus:border-2 border-white outline rounded-md p-3"
+                required={true}
+              />
+              <textarea
+                name=""
+                id=""
+                placeholder="Tell me about your queries"
+                className="focus:border-2 border-white outline rounded-md p-3 w-full h-40"
+                required={true}
+              ></textarea>
+              <button type="submit" className="bg-emerald-400 rounded-2xl p-3 ">
+                Send message
+              </button>
+            </form>
+          </div>
         </div>
 
         {/* left side end here */}
@@ -89,22 +105,60 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* social part */}
 
-    {/* social part */}
+          <div className="social flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
+            <h1 className="text-emerald-300 text-2xl">Follow me social</h1>
+            <div className="flex  gap-5">
+              <button
+                onClick={() =>
+                  window.open("https://github.com/freakkyshivam", "_blank")
+                }
+                className="p-3 rounded-xl border  cursor-pointer text-emerald-500 bg-emerald-200 "
+              >
+                {" "}
+                <Github className=" hover:text-black transition-colors " />{" "}
+              </button>
 
-            <div className="social flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
-                <h1 className="text-emerald-300 text-2xl">Follow me social</h1>
-                <div className="flex  gap-5">
-                    <a  href="https://github.com/freakkyshivam" className="p-3 rounded-xl border  cursor-pointer text-emerald-500 bg-emerald-200 " > <Github className=" hover:text-black transition-colors "/> </a>
-                     <a href="https://www.linkedin.com/in/shivam-chaudhary-289400357?"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200  " > <Linkedin className=" hover:text-sky-500 transition-colors "/> </a>
-                      <a href="https://x.com/freakkyshivam"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200"  > <Twitter className=" hover:text-sky-500 transition-colors"/> </a>
-                       <a href="https://www.instagram.com/freakkyshivam/"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200  " > <Instagram className="hover:text-orange-500 transition-colors"/> </a>
-                </div>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/shivam-chaudhary-289400357?",
+                    "_blank"
+                  )
+                }
+                className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200  "
+              >
+                {" "}
+                <Linkedin className=" hover:text-sky-500 transition-colors " />{" "}
+              </button>
+
+              <button
+                onClick={() =>
+                  window.open("https://x.com/freakkyshivam", "_blank")
+                }
+                className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200"
+              >
+                {" "}
+                <Twitter className=" hover:text-sky-500 transition-colors" />{" "}
+              </button>
+
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/freakkyshivam/",
+                    "_blank"
+                  )
+                }
+                className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200  "
+              >
+                {" "}
+                <Instagram className="hover:text-orange-500 transition-colors" />{" "}
+              </button>
             </div>
-
+          </div>
         </div>
         {/* right side div end here */}
-      
       </div>
     </section>
   );
