@@ -8,7 +8,6 @@ const Learning = () => {
     "React.js",
     "Git & GitHub",
     "C/C++",
-    
     "Problem Solving"
   ];
 
@@ -34,7 +33,7 @@ const Learning = () => {
                     <h4 className="text-3xl font-semibold  text-emerald-400 mb-4">Currently Learning</h4>
                     <div className="flex justify-center  flex-wrap gap-2 mt-3.5 px-4 py-2 bg-transparent rounded-full text-sm font-medium shadow-sm  ">
                       {['Mastering React.js', 'Typescript', 'DSA Using C/C++', 'Problem Solving'].map((tech, index) => (
-                        <span key={index} className="px-4 py-2 rounded-full text-sm  border border-emerald-400 font-medium text-slate-300 shadow-sm  hover:bg-slate-600 hover:shadow-md transition-shadow">
+                        <span key={index} className="px-4 py-2 rounded-full text-sm  border border-emerald-400 font-medium text-slate-300 shadow-sm hover:shadow-md transition-shadow hover:bg-slate-800/50  cursor-pointer ">
                           {tech}
                         </span>
                       ))}
