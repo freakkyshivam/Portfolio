@@ -95,10 +95,10 @@ const Contact = () => {
             <div className="social flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
                 <h1 className="text-emerald-300 text-2xl">Follow me social</h1>
                 <div className="flex  gap-5">
-                    <a  href="https://github.com/freakkyshivam" className="p-3 rounded-xl border  cursor-pointer text-emerald-500 bg-emerald-200 " > <Github/> </a>
-                     <a href="https://www.linkedin.com/in/shivam-chaudhary-289400357?"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200 " > <Linkedin/> </a>
-                      <a href="https://x.com/freakkyshivam"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200 "  > <Twitter/> </a>
-                       <a href="https://www.instagram.com/freakkyshivam/#"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200 " > <Instagram/> </a>
+                    <a  href="https://github.com/freakkyshivam" className="p-3 rounded-xl border  cursor-pointer text-emerald-500 bg-emerald-200 " > <Github className=" hover:text-black transition-colors "/> </a>
+                     <a href="https://www.linkedin.com/in/shivam-chaudhary-289400357?"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200  " > <Linkedin className=" hover:text-sky-500 transition-colors "/> </a>
+                      <a href="https://x.com/freakkyshivam"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200"  > <Twitter className=" hover:text-sky-500 transition-colors"/> </a>
+                       <a href="https://www.instagram.com/freakkyshivam/"  className="p-3 rounded-xl border cursor-pointer text-emerald-500 bg-emerald-200  " > <Instagram className="hover:text-orange-500 transition-colors"/> </a>
                 </div>
             </div>
 

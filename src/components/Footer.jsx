@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react"
+import { Github, Linkedin, Twitter, Heart, Instagram } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -22,21 +22,32 @@ export function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/shivamchaudhary"
+                href="https://www.linkedin.com/in/shivam-chaudhary-289400357?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
+
               <a
-                href="https://twitter.com/shivamchaudhary"
+                href="https://x.com/freakkyshivam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-sky-400 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
               </a>
+
+                  <a
+                href="https://www.instagram.com/freakkyshivam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-orange-400 transition-colors"
+              >
+                 <Instagram className="w-5 h-5"/>
+              </a>
+
             </div>
           </div>
 
