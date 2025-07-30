@@ -143,7 +143,7 @@ const Project = () => {
         {project.map((proj) => (
           <div
             key={proj.id}
-            className={`p-6 border border-emerald-400 rounded-lg shadow `}
+            className={`p-6 border border-emerald-400 rounded-lg shadow hover:translate-y-1 cursor-pointer `}
           >
             <img src={proj.image} className="h-fit w-full rounded-2xl mb-2 " />
 

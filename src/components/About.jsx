@@ -39,7 +39,7 @@ const About = () => {
           </div>
           
         
-          <div className="mt-8 lg:mt-10 p-4 sm:p-6 bg-transparent rounded-2xl border border-emerald-400 hover:shadow-lg transition-shadow">
+          <div className="mt-8 lg:mt-10 p-4 sm:p-6 bg-transparent rounded-2xl border border-emerald-400 hover:shadow-lg transition-shadow hover:translate-y-1">
             <h4 className="text-base sm:text-lg font-semibold text-emerald-300 mb-4">Fun Facts About Me:</h4>
             <ul className="space-y-2 text-sm sm:text-base">
               <li>☕ Debug better with coffee (scientifically proven)</li>
@@ -58,7 +58,7 @@ const About = () => {
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
-              <div key={index} className="p-4 sm:p-6 rounded-2xl border border-emerald-400 hover:shadow-lg transition-shadow cursor-pointer hover:bg-slate-800/50">
+              <div key={index} className="p-4 sm:p-6 rounded-2xl border border-emerald-400 hover:shadow-lg transition-shadow cursor-pointer hover:bg-slate-800/50 hover:translate-y-1">
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center shadow-lg">
                     <IconComponent size={20} className="sm:w-6 sm:h-6 text-white" />
@@ -74,7 +74,7 @@ const About = () => {
         </div>
 
          
-        <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-transparent border border-emerald-400 rounded-2xl hover:shadow-lg transition-shadow">
+        <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-transparent border border-emerald-400 rounded-2xl hover:shadow-lg transition-shadow hover:translate-y-1">
           <h4 className="text-base sm:text-lg font-semibold text-emerald-300 mb-4">My Coding Timeline</h4>
           <div className="space-y-3 sm:space-y-4">
             <div className="flex items-start space-x-3">

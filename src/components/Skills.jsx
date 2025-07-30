@@ -42,7 +42,7 @@ const Learning = () => {
 
 
                      <div className="mt-12 text-center">
-          <div className="bg-transparent rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border border-emerald-400">
+          <div className="bg-transparent rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border border-emerald-400 hover:translate-y-1">
             <h3 className="text-2xl font-bold text-emerald-400 mb-4">Why I Code</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               Programming isn't just about writing code for me—it's about solving problems, 
