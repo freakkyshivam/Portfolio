@@ -1,6 +1,5 @@
 import React from "react";
 import { Calendar, ExternalLink, Github } from "lucide-react";
-import { style } from "motion/react-client";
 
 const Project = () => {
   const project = [

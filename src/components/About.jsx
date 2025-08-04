@@ -1,6 +1,6 @@
 import React from 'react'
 import { BookOpen, Code, Coffee, Lightbulb } from 'lucide-react';
-import { motion } from "motion/react"
+ 
 
 const About = () => {
   const stats = [

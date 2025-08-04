@@ -6,6 +6,8 @@ const Learning = () => {
     "HTML & CSS",
     "JavaScript",
     "React.js",
+    "Node.js",
+    "Express.js",
     "Git & GitHub",
     "C/C++",
     "Problem Solving"

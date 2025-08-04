@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Send,
   Mail,
@@ -11,6 +11,23 @@ import {
 } from "lucide-react";
 
 const Contact = () => {
+
+  const [name, setname] = useState("");
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] =  useState("")
+
+  function handleClick(e){
+    e.prventDefault();
+    setname("")
+    setEmail("");
+    setSubject("")
+    setMessage("")
+
+  }
+
+  
+
   return (
     <section className="bg-slate-950 text-white min-h-screen" id="contact">
       <h1 className="text-emerald-400 text-3xl font-bold text-center mb-5 py-10">
@@ -35,13 +52,17 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
+                value={name}
                 placeholder="Enter your name "
+                onChange={e => setname(e.target.value)}
                 className="focus:border-2 border-white outline rounded-md p-3"
                 required={true}
               />
               <input
                 type="email"
                 name="email"
+                value={email}
+                 onChange={e => setEmail(e.target.value)}
                 placeholder="Enter your email here "
                 className="focus:border-2 border-white outline rounded-md p-3"
                 required={true}
@@ -49,17 +70,21 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="What is subject?"
+                value={subject}
+                 onChange={e => setSubject(e.target.value)}
                 className="focus:border-2 border-white outline rounded-md p-3"
                 required={true}
               />
               <textarea
                 name=""
                 id=""
+                value={message}
+                 onChange={e => setMessage(e.target.value)}
                 placeholder="Tell me about your queries"
                 className="focus:border-2 border-white outline rounded-md p-3 w-full h-40"
                 required={true}
               ></textarea>
-              <button type="submit" className="bg-emerald-400 rounded-2xl p-3 ">
+              <button type="submit" className="bg-emerald-400 rounded-2xl p-3 " onClick={handleClick}>
                 Send message
               </button>
             </form>
@@ -108,7 +133,7 @@ const Contact = () => {
           {/* social part */}
 
           <div className="social flex flex-col gap-3 border border-emerald-400 rounded-2xl bg-slate-900/30 p-5 m-5">
-            <h1 className="text-emerald-300 text-2xl">Follow me social</h1>
+            <h1 className="text-emerald-300 text-2xl">Follow me on social media</h1>
             <div className="flex  gap-5">
               <button
                 onClick={() =>

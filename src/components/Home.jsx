@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
-import About from "./About";
+ 
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900" />
       <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/5 via-transparent to-purple-500/5" />
 
-     <div className="mb-8 z-50 mt-24 sm:mt-28">
+     <div className="mb-8 z-50 mt-18 sm:mt-28">
   <div className="w-24 h-24  md:w-32 md:h-32 mx-auto rounded-full bg-gradient-to-br from-emerald-400 to-purple-500 p-1">
     <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center text-4xl font-bold text-emerald-400">
       SC
@@ -15,6 +15,7 @@ const Home = () => {
   </div>
 </div>
 
+ 
 
     
 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl z-50 font-bold mb-6 bg-gradient-to-r from-emerald-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
