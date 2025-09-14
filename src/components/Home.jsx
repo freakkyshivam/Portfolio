@@ -49,7 +49,7 @@ const Home = () => {
                py-2 px-4 text-sm md:py-4 md:px-6 md:text-base 
                flex justify-center text-white rounded-xl"
     onClick={() =>
-      window.open("https://www.linkedin.com/in/shivam-chaudhary-289400357?", "_blank")
+      window.open("https://www.linkedin.com/in/freakkyshivam", "_blank")
     }
   >
     <Linkedin className="w-4 h-4 mr-2 md:w-5 md:h-5" />

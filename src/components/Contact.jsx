@@ -148,7 +148,7 @@ const Contact = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/shivam-chaudhary-289400357?",
+                    "https://www.linkedin.com/in/freakkyshivam",
                     "_blank"
                   )
                 }
