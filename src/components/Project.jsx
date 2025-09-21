@@ -96,11 +96,11 @@ const Project = () => {
   const getCategoryColor = (category) => {
     switch (category) {
       case "Full Stack":
-        return "bg-purple-500/20 text-purple-400 border-purple-400/30";
+        return "bg-purple-500/20 text-purple-600 border-purple-400/30";
       case "AI/ML":
         return "bg-blue-500/20 text-blue-400 border-blue-400/30";
       case "Frontend":
-        return "bg-pink-500/20 text-pink-400 border-pink-400/30";
+        return "bg-pink-500/20 text-pink-600 border-pink-400/30";
       default:
         return "bg-emerald-500/20 text-emerald-400 border-emerald-400/30";
     }
