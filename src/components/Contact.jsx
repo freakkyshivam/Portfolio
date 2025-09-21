@@ -260,14 +260,14 @@ const Contact = () => {
               Let's Connect
             </h2>
             
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-4 gap-4">
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
                   <button
                     key={index}
                     onClick={() => window.open(social.url, "_blank")}
-                    className={`group p-4 rounded-2xl border border-slate-700 bg-slate-800/30 hover:border-emerald-400/50 hover:bg-slate-700/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 ${social.bgHover}`}
+                    className={`group p-2 rounded-2xl border border-slate-700 bg-slate-800/30 hover:border-emerald-400/50 hover:bg-slate-700/50 transition-all duration-300 hover:-translate-y-1 hover:scale-105 ${social.bgHover}`}
                   >
                     <div className="flex flex-col items-center gap-3">
                       <div className="w-12 h-12 rounded-xl bg-emerald-400/20 border border-emerald-400/30 flex items-center justify-center group-hover:scale-110 transition-transform">

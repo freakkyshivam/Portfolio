@@ -7,8 +7,8 @@ const Project = () => {
       id: 1,
       title: "Blog App",
       description:
-        "A full-stack blog application with user authentication, rich text editing, image uploads, and comment system. Features modern UI with dark mode support and responsive design.",
-      image: "./public/img/Gemini_Generated_Image_of1s1eof1s1eof1s.png",
+        "Developed a full stack Blog App using MERN stack with features like blog creation, editing, deletion, and image upload. Implemented secure user authentication, search & filter functionality, and a responsive UI. Integrated AI-powered content suggestions to enhance the user experience.",
+      image: "https://images.unsplash.com/photo-1638342863994-ae4eee256688?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Bcrypt", "Cloudinary", "Tailwind CSS"],
       githubUrl: "https://github.com/freakkyshivam/Blog-app",
       liveUrl: "https://blog-4v8gkakz0-shivam-chaudharys-projects-6fb9415e.vercel.app/",
