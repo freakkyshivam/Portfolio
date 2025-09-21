@@ -46,6 +46,8 @@ const Project = () => {
       liveUrl: "https://freakkyshivam.github.io/Note-keep/",
       date: "Jun 2025",
       status: "completed",
+      featured: false,
+      category: "Frontend"
     },
     {
       id: 4,
@@ -75,6 +77,8 @@ const Project = () => {
       liveUrl: "https://weather-app-psi-ruby-16.vercel.app/",
       date: "March 2024",
       status: "completed",
+      featured: false,
+      category: "Frontend"
     },
   ];
 
