@@ -72,7 +72,7 @@ const Project = () => {
       technologies: ["HTML", "CSS", "JavaScript", "API"],
 
       githubUrl: "https://github.com/freakkyshivam/Weather-app",
-      liveUrl: "https://freakkyshivam.github.io/Weather-app/",
+      liveUrl: "https://weather-app-psi-ruby-16.vercel.app/",
       date: "March 2024",
       status: "completed",
     },
