@@ -79,7 +79,7 @@ const Home = () => {
 
 
       {/* Main Heading */}
-      <div className={`text-center mb-6 transform transition-all duration-1000 delay-200 z-50 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <div className={`text-center mb-6 transform transition-all duration-1000 delay-200 z-30 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 px-4">
           <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-emerald-400 animate-pulse flex-shrink-0" />
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight">
@@ -90,7 +90,7 @@ const Home = () => {
       </div>
 
       {/* Typed Role */}
-      <div className={`mb-6 transform transition-all duration-1000 delay-400 z-50 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <div className={`mb-6 transform transition-all duration-1000 delay-400 z-30 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-300 font-medium text-center h-7 sm:h-8 md:h-10 px-4">
           {typedText}
           <span className="animate-pulse">|</span>
@@ -107,7 +107,7 @@ const Home = () => {
       </div>
 
       {/* Social Links */}
-      <div className={`flex flex-wrap justify-center gap-4 mb-10 z-50 transform transition-all duration-1000 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <div className={`flex flex-wrap justify-center gap-4 mb-10 z-30 transform transition-all duration-1000 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         {socialLinks.map((social, index) => {
           const IconComponent = social.icon;
           return (
@@ -130,7 +130,7 @@ const Home = () => {
       </div>
 
       {/* CTA Buttons */}
-      <div className={`flex flex-wrap justify-center gap-4 mb-12 z-50 transform transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+      <div className={`flex flex-wrap justify-center gap-4 mb-12 z-30 transform transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <button
           className="group flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-blue-500 hover:from-emerald-600 hover:to-blue-600 text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded-2xl shadow-lg hover:shadow-emerald-500/25 transition-all duration-300 hover:-translate-y-1 hover:scale-105"
           onClick={() => handleScrollToSection('project')}

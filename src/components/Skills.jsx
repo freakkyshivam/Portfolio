@@ -4,19 +4,20 @@ import { Code, BookOpen, Target, Sparkles, TrendingUp, Zap } from 'lucide-react'
 const Learning = () => {
   const skills = [
     { name: "HTML & CSS", level: 85, category: "Frontend" },
-    { name: "JavaScript", level: 75, category: "Programming" },
-    { name: "React.js", level: 70, category: "Frontend" },
+    { name: "JavaScript", level: 70, category: "Programming" },
+    { name: "React.js", level: 60, category: "Frontend" },
     { name: "Node.js", level: 60, category: "Backend" },
     { name: "Express.js", level: 55, category: "Backend" },
-    { name: "Git & GitHub", level: 80, category: "Tools" },
+    { name: "Git & GitHub", level: 60, category: "Tools" },
+    {name : "Tailwind CSS", level : 50, category:"Frontend"},
     { name: "C/C++", level: 65, category: "Programming" },
-    { name: "Problem Solving", level: 70, category: "Core" }
+    { name: "Problem Solving", level: 55, category: "Core" }
   ];
 
   const currentlyLearning = [
     { name: 'Mastering React.js', icon: Code, progress: 60 },
     { name: 'TypeScript', icon: Zap, progress: 30 },
-    { name: 'DSA Using C/C++', icon: Target, progress: 45 },
+    { name: 'DSA Using C/C++', icon: Target, progress: 35 },
     { name: 'Problem Solving', icon: BookOpen, progress: 55 }
   ];
 
